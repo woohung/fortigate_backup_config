@@ -1,0 +1,10 @@
+---
+# fortigate #1
+- host: <IP-адрес Fortigate>
+  token: '<Ваш API-токен'
+# fortigate #2
+- host: <IP-адрес Fortigate>
+  token: '<Ваш API-токен'
+# fortigate #N
+- host: <IP-адрес Fortigate>
+  token: '<Ваш API-токен'
