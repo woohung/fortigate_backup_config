@@ -7,7 +7,6 @@ import logging
 import argparse
 
 
-
 def fortios_backup_config(
     device,
     token,
@@ -31,6 +30,9 @@ def fortios_backup_config(
             По умолчанию True.
         enable_ssl (bool, optional): Вкл/Выкл проверку SSL.
             По умолчанию False.
+
+    Returns:
+        None
 
     Raises:
         requests.exceptions.Timeout: Если время ожидания ответа от API истекает.
@@ -152,6 +154,7 @@ def process_device(device, backup_dir, enable_warning, enable_ssl):
         enable_warning=enable_warning,
         enable_ssl=enable_ssl,
     )
+
 
 def main():
     """
